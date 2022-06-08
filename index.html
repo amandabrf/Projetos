@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular IMC</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Digite seu peso</h2>
+    <input type="text" placeholder="" id="peso"> <br>
+    <h2>Digite sua altura</h2>
+    <input type="text" placeholder="" id="altura"> <br>
+    <button class="btn-flexpeak" onclick="clicouNoBotao()">Calcular o IMC</button>
+    
+    <div id="resultado">
+    <h2 id="resultaImc"></h2>
+    </div>
+    </div>
+    
+    
+   
+
+    <script>
+        function clicouNoBotao(){
+            var peso= document.querySelector ("#peso").value
+            var altura= document.querySelector ("#altura").value
+            var Imc= (parseFloat(peso)/(parseFloat(altura)**2)).toFixed(1)
+            var classificacao= ""
+            if (Imc>=18,5 && Imc<=24 ){
+                classificacao="Normal"
+            } else if ( Imc>=25 && Imc<=29){
+                classificacao= "Sobrepeso"
+            } else if (Imc>=30 && Imc<=39){
+                classificacao= "Obesidade"
+            } else if(Imc>40){
+                classificacao="Obesidade grave"
+            } else if(Imc<18){
+                classificacao="Magreza"
+            }
+            document.querySelector("#resultaImc").style.display="block"
+            document.getElementById("resultaImc"). innerHTML="Seu IMC é: " +  Imc  +" , "  +  classificacao
+
+        }
+        document.querySelector("#resultaImc").style.display="none"
+    </script>
+</body>
+</html>
