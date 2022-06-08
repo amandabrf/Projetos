@@ -1,0 +1,35 @@
+body{
+    background:#C8DBD4;
+}
+
+.container{
+    text-align: center;
+}
+
+.btn-flexpeak{
+    background-color: #12AD88;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border-radius: 35px;
+    padding: 10px 25px;
+    border: 1px solid #12AD88;
+}
+.btn-flexpeak:hover{
+    background-color:#fff;
+     color: #12AD88;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#resultaImc {
+    background-color: #12AD88;
+    color: #fff;
+    border-radius: 35px;
+    padding: 10px 25px;
+}
