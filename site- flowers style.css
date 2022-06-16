@@ -111,3 +111,26 @@ body{
 #background {
     background-image: url('img/web.png');
 }
+
+#brown{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    top: 155%;
+    left: 0;
+    height: 233px;
+    padding-top: 85px;
+    text-align: center;
+    background:#6b502c;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Playfair Display', Serif;
+}
+
+#flores{
+    justify-content: space-between;
+}
+
+h3.card-title{
+    display: inline;
+}
